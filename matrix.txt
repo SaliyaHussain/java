@@ -1,0 +1,63 @@
+import java.util.*;
+import java.lang.reflect.Array;
+public class Main{
+public static void main(Strings[] args)
+{
+Scanner sc=new Scanner(System.in);
+  //2dimension matrix(Addition)	    
+	    /*int r,c;
+	    System.out.println("Enter no.of rows");
+	    r=sc.nextInt();
+	    System.out.println("Enter no.of colums");
+	    c=sc.nextInt();
+	    int ar1[][]=new int[r][c];
+	    int ar2[][]=new int[r][c];
+	    System.out.println("Enter 1st array elements");
+	    for(int i=0;i<r;i++)
+	    for(int j=0;j<c;j++)
+	    ar1[i][j]=sc.nextInt();
+	    System.out.println("Enter 2nd array elements");
+	    for(int i=0;i<r;i++)
+	    for(int j=0;j<c;j++)
+	    ar2[i][j]=sc.nextInt();
+	    for(int i=0;i<r;i++){
+	    for(int j=0;j<c;j++)
+	    System.out.print(ar1[i][j]+" ");
+	    System.out.println();}
+	    for(int i=0;i<r;i++){
+	    for(int j=0;j<c;j++)
+	    System.out.print(ar2[i][j]+" ");
+	    System.out.println();}
+	    System.out.println("Addition Operation");
+	    for(int i=0;i<r;i++){
+	    for(int j=0;j<c;j++)
+	    System.out.print(ar1[i][j]+ar2[i][j]+" ");
+	    System.out.println();}
+	    */
+		
+		//sum of diagonals
+	   int r,c,s=0;
+	    System.out.println("Enter no.of rows");
+	    r=sc.nextInt();
+	    System.out.println("Enter no.of colums");
+	    c=sc.nextInt();
+	    int ar2[][]=new int[r][c];
+	    System.out.println("Enter array elements");
+	    for(int i=0;i<r;i++)
+	    for(int j=0;j<c;j++)
+	    ar2[i][j]=sc.nextInt();
+	    for(int i=0;i<r;i++){
+	    for(int j=0;j<c;j++)
+	    System.out.print(ar2[i][j]+" ");
+	    System.out.println();}
+	    System.out.println("Sum of diagonal Elements: ");
+	    for(int i=0;i<r;i++)
+	    {
+	        for(int j=0;j<c;j++)
+	        if (i==j)
+	        s=s+ar2[i][j];
+	    }
+	    System.out.print(s)
+		
+}
+}

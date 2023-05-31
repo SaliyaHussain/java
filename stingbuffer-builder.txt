@@ -1,0 +1,29 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		/*StringBuffer s=new StringBuffer("Ice-");
+		s.append("cream");
+		System.out.println(s);
+		System.out.println(s.delete(3,4));
+		System.out.println(s.insert(8,"s"));
+		System.out.println(s.reverse());
+		
+		StringBuilder st=new StringBuilder("Ice-");
+		st.append("cream");
+		System.out.println(st);
+	    */
+		
+		
+	    //comparing
+	    StringBuffer s=new StringBuffer("Ice");
+        StringBuffer st=new StringBuffer("Eye");
+        if(s.compareTo(st)>0)
+        System.out.println("greater"+s.compareTo(st));
+        else if(s.compareTo(st)<0)
+        System.out.println("Lesser"+s.compareTo(st));
+        else
+        System.out.println("equals");
+        
+	}
+}

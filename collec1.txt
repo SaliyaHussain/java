@@ -1,0 +1,120 @@
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args)
+    {
+      /*Stack s=new Stack();
+        s.push(5);
+        s.push(7);
+        s.push(90);
+        s.push(100);
+        s.push(150);
+        s.pop();
+        boolean res=s.empty();
+        System.out.println(s);
+        System.out.println(res);
+        System.out.println(s.search(7));
+        System.out.println(s.peek());*/
+        
+        /*ArrayDeque<Integer> s=new ArrayDeque();
+        ArrayDeque<Integer> s1=new ArrayDeque();
+        s.push(5);
+        s.push(7);
+        s.push(90);
+        s.push(100);
+        s.push(150);
+        s.pop();
+        s.addFirst(1);  
+        s.addLast(1000);
+        s.offerFirst(55);
+        s.offerLast(5);
+        s.offer(72);
+        s1=s.clone();
+        s1.pop();
+        s1.pop();
+        Iterator<Integer> it=s1.iterator();
+        while(it.hasNext())
+        System.out.println(it.next());
+       for(int i:s)
+       System.out.println(i);
+    
+    System.out.println(s);
+    System.out.println(s1);*/
+    
+    
+    
+   PriorityQueue p=new PriorityQueue();
+    p.add(32);
+    p.add(12);
+    p.add(1);
+    p.add(12);
+    p.add(10);
+    p.add(1);
+    p.add(1);
+    System.out.println(p);
+    Iterator it=p.iterator();
+    while(it.hasNext()){
+    System.out.print(it.next());
+    System.out.println(" ");}
+    p.remove("c++");
+    System.out.println(p);
+    System.out.println(p.size());
+    
+    while(!(p.isEmpty()))
+    {
+     System.out.println(p.remove());   
+}
+/*PriorityQueue<String> apl=new PriorityQueue();
+Set apl=new HashSet();
+apl.add("Donuts");
+apl.add("Banana");
+apl.add("Apple");
+apl.add("Avacado");
+apl.add("Chocolate");
+System.out.println(apl);
+while(!(apl.isEmpty()))
+System.out.println(apl.remove());*/
+
+/*Set s1=new HashSet();
+s1.add('z');
+s1.add('r');
+s1.add('b');
+s1.add('c');
+s1.add('a');
+s1.add(' ');
+System.out.println(s1);*/
+
+Set<Integer> s=new LinkedHashSet();
+s.add(9);
+s.add(12);
+s.add(9);
+s.add(17);
+s.add(656);
+s.add(1);
+s.add(4);
+System.out.println(s);*/
+
+/*Set<Integer> s=new TreeSet();
+s.add(9);
+s.add(12);
+s.add(9);
+s.add(17);
+s.add(656);
+s.add(1);
+s.add(4);
+System.out.println(s);*/
+
+Map<Integer,String> m=new HashMap();
+	    m.put(sc.nextInt(),sc.nextLine());
+	    m.put(1,"Banana");
+	    m.put(3,"mango");
+	    Set s=m.entrySet();
+	    Iterator it=s.iterator();
+	    while(it.hasNext())
+	    {
+	        //System.out.println(it.next());
+	        Map.Entry val=(Map.Entry)it.next();
+	        System.out.println(val.getKey());
+	    }
+}
+}

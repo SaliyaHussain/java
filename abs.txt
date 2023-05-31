@@ -1,0 +1,39 @@
+import java.util.Scanner;
+abstract class car{
+    public abstract void drive(String s);
+    public abstract void stop();
+    public void playmusic(){
+        System.out.println("playing music");
+    }
+    
+}
+abstract class waganor extends car{
+    public abstract void fly();
+    public void drive(String s){
+        System.out.println("she drive "+s);
+    }
+    public void stop(){
+        System.out.println("Stop");
+    }
+}
+class updatedwag extends waganor{
+    public void drive(String s,String s1){
+        System.out.println("she drive "+s+" in "+s1);
+    }
+    public void fly(){
+        System.out.println("flying");
+    }
+    
+}
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner Sc=new Scanner(System.in);
+		updatedwag c=new updatedwag();
+		c.fly();
+		c.drive("fast");
+		c.drive("slow","city");
+		c.playmusic();
+		c.stop();
+	}
+}

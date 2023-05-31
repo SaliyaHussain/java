@@ -1,0 +1,39 @@
+class A{
+    A()
+    {
+        System.out.println("A with no parameters");
+    }
+    A(int a)
+    {
+        System.out.println("A with 1 parameter "+a);
+    }
+}
+class B extends A{
+    B()
+    {
+        System.out.println("B with no parameters");
+    }
+    B(int a,int b)
+    {
+        super(a);
+        System.out.println("B with 2 parameters "+a+" "+"b");
+    }
+}
+class C extends B{
+    C()
+    {
+        System.out.println("C with no parameters");
+    }
+    C(int a,int b,int c)
+    {
+        super(a,b);
+        System.out.println("C with 3 parameters "+a+b+c);
+    }
+}
+public class Main
+{
+    public static void main(String[] args)
+    {
+        C obj=new C(10,20,30);
+    }
+}

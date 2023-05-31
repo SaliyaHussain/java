@@ -1,0 +1,74 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	/* String s="cbit";
+		String st="cbit";
+		if(s==st)
+		System.out.println("equals");
+		else
+		System.out.println("not equals");
+		if(s.equals(st))
+		System.out.println("strings are equals");
+		else
+		System.out.println("strings not equals");*/
+	    
+	    
+	    /*String s=new String("cbit");
+		String st=new String("cbit");
+		if(s==st)
+		System.out.println("equals");
+		else
+		System.out.println("not equals");
+		if(s.equals(st))
+		System.out.println("strings are equals");
+		else
+		System.out.println("strings not equals");*/
+	    
+	    
+		/*String s=new String("cbit");
+		String st="cbit";
+		if(s==st)
+		System.out.println("equals");
+		else
+		System.out.println("not equals");
+		if(s.equals(st))
+		System.out.println("strings are equals");
+		else
+		System.out.println("strings not equals");*/
+		
+		/*String s="cbit";
+		String st="CBIT";
+		if(s.equalsIgnoreCase(st))
+		System.out.println("strings are equals");
+		else
+		System.out.println("strings not equals");*/
+		
+		/*String s="cbit";
+		String st="college";
+		String res=s.concat(st);
+		System.out.println(s.concat(st));
+		if(s+st==res)
+		System.out.println("equals");
+		else
+		System.out.println("not equals");
+		if((s+st).equals(res))
+		System.out.println("equals");
+		else
+		System.out.println("not equals");*/
+		
+		//functions
+		String s="Program";
+		System.out.println(s.substring(3));
+		System.out.println(s.contains("gram"));
+		System.out.println(s.replace('m','s'));
+		System.out.println(s.indexOf('g'));
+		System.out.println(s.toLowerCase());
+		System.out.println(s.toUpperCase());
+		System.out.println(s.toString());
+		System.out.println(s.charAt(3));
+		System.out.println(s.toCharArray());
+		
+	}
+}

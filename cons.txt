@@ -1,0 +1,23 @@
+class A{
+    A()
+    {
+        System.out.println("A with no parameters");
+    }
+    A(int a)
+    {
+        this();
+        System.out.println("A with 1 parameter "+a);
+    }
+    A(int a,int b)
+    {
+        this(a);
+        System.out.println("A with 2 parameters "+a+b);
+    }
+}
+public class Main
+{
+    public static void main(String[] args)
+    {
+        A obj=new A(10,20);
+    }
+}

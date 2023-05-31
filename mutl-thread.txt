@@ -1,0 +1,59 @@
+import java.util.*;
+class assign extends Thread
+{
+    public void run()
+    {
+        try{
+        System.out.println("Student started Assignment");
+        System.out.println("which chapter u want to take");
+        Thread.sleep(5000);
+        }
+        catch(Exception e)
+        {
+            System.out.println("InterruptedException");
+        }
+        Scanner sc=new Scanner(System.in);
+        int n;
+        n=sc.nextInt();
+        System.out.println("Student Assesment chapter "+n);
+    }
+}
+class print extends Thread
+{
+    public void run()
+    {
+        System.out.println("printing started");
+        for(int i=0;i<2;i++)
+        {
+            System.out.println("CBIT");
+            try{
+                Thread.sleep(2000);
+            }
+            catch(Exception e){
+                System.out.println("InterruptedException");
+            }
+        }
+        System.out.println("printing ended");
+    }
+}
+class multi extends Thread
+{
+    public void run()
+    {
+        System.out.println("multiplication Started");
+        System.out.println(52*42);
+        System.out.println("multiplication ended");
+    }
+}
+class Main 
+{
+    public static void main(String args[])
+    {
+        assign a=new assign();
+        print p=new print();
+        multi m=new multi();
+        a.start();
+        p.start();
+        m.start();
+    }
+}

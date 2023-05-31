@@ -1,0 +1,106 @@
+import java.util.*;
+import java.lang.reflect.Array;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+		//printting array
+	    int ar[]={12,34,78,19,23};
+	    System.out.println(Arrays.toString(ar));
+        //reading and printing
+		int ar1[]={1,2,3,4,5};
+	    for(int i=0;i<ar.length;i++)
+	    ar1[i]=sc.nextInt();
+	    System.out.println(Arrays.toString(ar1));*/
+	    
+	   /* int ar[]={1,2,3,4,5};
+	   //type
+	    Class ct=ar.getClass().getComponentType();
+	   System.out.println("Type :"+ct);
+	   //length
+	   int length=Array.getLength(ar);
+	   System.out.println("Length:"+length);
+	   //search element
+	   int ele=(int)Array.get(ar,3);
+	   System.out.println(ele);
+       //modifing array
+	   Array.set(ar,2,78);
+	   int mda=ar[2];
+	   System.out.println("Modified array:"+mda);
+	    */
+	    
+	    
+        //2dimension matrix(Addition)	    
+	    /*int r,c;
+	    System.out.println("Enter no.of rows");
+	    r=sc.nextInt();
+	    System.out.println("Enter no.of colums");
+	    c=sc.nextInt();
+	    int ar1[][]=new int[r][c];
+	    int ar2[][]=new int[r][c];
+	    System.out.println("Enter 1st array elements");
+	    for(int i=0;i<r;i++)
+	    for(int j=0;j<c;j++)
+	    ar1[i][j]=sc.nextInt();
+	    System.out.println("Enter 2nd array elements");
+	    for(int i=0;i<r;i++)
+	    for(int j=0;j<c;j++)
+	    ar2[i][j]=sc.nextInt();
+	    for(int i=0;i<r;i++){
+	    for(int j=0;j<c;j++)
+	    System.out.print(ar1[i][j]+" ");
+	    System.out.println();}
+	    for(int i=0;i<r;i++){
+	    for(int j=0;j<c;j++)
+	    System.out.print(ar2[i][j]+" ");
+	    System.out.println();}
+	    System.out.println("Addition Operation");
+	    for(int i=0;i<r;i++){
+	    for(int j=0;j<c;j++)
+	    System.out.print(ar1[i][j]+ar2[i][j]+" ");
+	    System.out.println();}
+	    */
+	    
+		
+		//performin given operation
+	    /*int size=4,n;
+	    int[] ar=(int[])Array.newInstance(int.class,size);
+	    int size1=4;
+	    double[] b=(double[])Array.newInstance(double.class,size1);
+	    for(int i=0;i<size;i++){
+	        n=sc.nextInt();
+	    Array.set(ar,i,n);}
+	    System.out.println(Arrays.toString(ar));
+	    for(int i=0;i<size1;i++)
+	    {
+	        b[i]=(ar[i]+(ar[i]*0.15));
+	    }
+	    for(int i=size1-1;i>=0;i--)
+	    System.out.print(b[i]+" ");
+	   */
+	   
+	   //search element
+	   /*
+	   int n,chk,f=0,index=0;
+	   System.out.println("enter size of array");
+	   n=sc.nextInt();
+	   System.out.println("enter the elements ");
+	   int[] a=new int[n];
+	   for(int i=0;i<n;i++)
+	   a[i]=sc.nextInt();
+	   System.out.println("enter the element to search ");
+	   chk=sc.nextInt();
+	   for(int i=0;i<n;i++)
+	   {
+	       if (a[i]==chk){
+	           index=i;
+	           f=1;
+	       break;}
+	   }
+	   if (f==0)
+	   System.out.println("Index of given element :-1");
+	   else
+	   System.out.println("Index of given element :"+index);
+	   */
+	   }
+}

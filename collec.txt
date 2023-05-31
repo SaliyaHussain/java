@@ -1,0 +1,80 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	//arraylist
+	/*ArrayList<Integer> obj=new ArrayList<Integer>();
+    ArrayList obj1=new ArrayList();
+	boolean s;
+	obj.add(1);
+	obj.add(0,10);
+	obj.add(100);
+	obj.add(42);
+	System.out.println(obj);
+	obj1.addAll(obj);
+	obj.remove(1);
+	obj1.clear();
+	s=obj.contains(1);
+	System.out.println(s);
+	System.out.println(obj.set(1,50));
+	System.out.println(obj.get(2));
+	System.out.println(obj);*/
+	
+	//lined list
+	/*
+	LinkedList<Integer> obj=new LinkedList<Integer>();
+	obj.add(1);
+	obj.add(0,10);
+	obj.add(100);
+	obj.add(42);
+	obj.add(23);
+	obj.add(55);
+	obj.push(56);
+	obj.push(123);
+	obj.pop();
+	System.out.println(obj.peekFirst());
+	System.out.println(obj.peekLast());
+	System.out.println(obj);
+	obj.remove(4);
+	for(int n:obj)
+	System.out.println(n);
+	*/
+	
+	//printing by using iterator ang print in reverse order by listIterator
+	/*LinkedList<Integer> obj=new LinkedList<Integer>();
+	obj.add(1);
+	obj.add(0,10);
+	obj.add(100);
+	obj.add(42);
+	obj.add(23);
+	obj.add(55);
+	//obj.push(56);
+	//obj.push(123);
+	Iterator<Integer> it=obj.iterator();
+	while(it.hasNext())
+	System.out.println(it.next());
+	ListIterator<Integer> i=obj.listIterator();
+    while(i.hasNext())
+	System.out.println(i.next());
+	System.out.println("........");
+	while(i.hasPrevious()){
+	System.out.println(i.previous());}*/
+	
+	//searching and removing
+	LinkedList<String> s=new LinkedList<String>();
+	s.add("arpita");
+	String s1;
+	s.add("tejashwini");
+	s.add("vinod");
+	s.add("kiran");
+	s.add("rajeshwari");
+	ListIterator it=s.listIterator();
+	while(it.hasNext())
+	{
+	     System.out.println(it.next());
+	    if(it.next()=="vinod")
+	    System.out.println(it.next());
+	     it.remove();
+	    }
+	}
+}

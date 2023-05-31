@@ -1,0 +1,19 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {    
+	    int n,m;
+	    Scanner sc=new Scanner(System.in);
+	    n=sc.nextInt();
+	    m=sc.nextInt();
+	    try{
+	    System.out.println(n%m);
+	    }
+	    catch(Exception e){
+	    System.out.println("2nd value should not be zero");}
+	    finally{
+	        System.out.println("try-catch is finished");
+	    }
+
+	}
+}

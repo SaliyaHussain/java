@@ -1,0 +1,21 @@
+class sample{
+        private int a=123445677;
+    void getphone()
+    {
+        System.out.println(a);
+    }
+    void setphone(int b){
+        System.out.println(b);
+    }
+}
+public class Main{
+    public static void main(String[] args)
+    {
+        sample s=new sample();
+        s.getphone();
+        s.setphone(92642754);
+        //System.out.println(s.a);
+    }
+}
+
+
